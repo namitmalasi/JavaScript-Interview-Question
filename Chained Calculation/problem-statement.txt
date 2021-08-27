@@ -1,0 +1,7 @@
+Create a function Calculator that should take one initial value.
+Chain calculation like add,sub on it.
+Return the calculated value on invocation of val() function at the end of the chain.
+
+eg:
+input: cal(2).add(5).sub(4).val();
+output:(2+5-4)=> 3
