@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  background-color: aquamarine;
+  height: 150px;
+  width: 350px;
+}
+#buttons {
+  margin: 10px;
+}
+span {
+  position: relative;
+  top: 50%;
+  left: 35%;
+}
