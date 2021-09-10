@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 80px;
+  margin: 10px;
+  font-size: larger;
+}
