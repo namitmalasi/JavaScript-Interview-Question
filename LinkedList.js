@@ -81,6 +81,53 @@ class LinkedList {
     this.size--;
     return data;
   }
+
+  // Inserting a node at certain position.
+  insertAt(pos, data) {
+    if (pos < 0 || pos > this.size) retun;
+
+    if (pos === 0) {
+      this.prepend(data);
+    } else if (pos === this.size) {
+      this.append(data);
+    } else {
+      const node = new Node(data);
+      let prev = null;
+      let current = this.head;
+      let counter = 0;
+      while (counter < pos) {
+        prev = current;
+        current = current.next;
+        counter++;
+      }
+      node.next = current;
+      prev.next = node;
+      this.size++;
+    }
+  }
+
+  // Removing a node from certain position.
+  removeAt(pos) {
+    if (pos < 0 || pos >= this.size) return null;
+
+    if (pos === 0) {
+      return this.removeFirstElement();
+    } else if (pos === this.size - 1) {
+      return this.removeLastElement();
+    } else {
+      let prev = null;
+      let current = this.head;
+      let counter = 0;
+      while (counter < pos) {
+        prev = current;
+        current = current.next;
+        counter++;
+      }
+      prev.next = current.next;
+      this.size--;
+      return current.data;
+    }
+  }
 }
 const list = new LinkedList();
 list.prepend(10);
@@ -88,7 +135,7 @@ list.prepend(20);
 list.append(30);
 list.append(40);
 console.log(list.printList());
-list.removeFirstElement();
+list.insertAt(2, 60);
 console.log(list.printList());
-list.removeLastElement();
+list.removeAt(3);
 console.log(list.printList());
