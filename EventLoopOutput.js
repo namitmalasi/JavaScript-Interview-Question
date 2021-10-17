@@ -5,7 +5,7 @@
 let a = true;
 let count = 0;
 
-setTimeout(() => {
+setTimeout(() => {  
   a = false;
 }, 2000);
 
