@@ -7,7 +7,7 @@ Output:
 result=[1,2,3,4,5,6,7,8,9,10,11]
 */
 
-// Approach 1:
+// Approach 1:  
 
 function flatten_the_array() {
   const result_array = [];
