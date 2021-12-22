@@ -37,3 +37,4 @@ class Foods {
 
 const foods = new Foods(rootElement, foodData);
 foods.renderList();
+ 
