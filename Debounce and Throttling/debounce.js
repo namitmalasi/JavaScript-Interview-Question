@@ -1,11 +1,14 @@
-function debounce(fn, delay) {
+function fetchApi() {
+  console.log("fetching from api");
+}
+
+function getDebouncedData(fn, delay) {
   let timer;
   return function () {
-    // console.log(this);
-    // console.log(arguments);
     if (timer) {
       clearTimeout(timer);
     }
+
     timer = setTimeout(() => {
       fn.apply(this, arguments);
       timer = null;
@@ -13,8 +16,4 @@ function debounce(fn, delay) {
   };
 }
 
-const getData = () => {
-  console.log("calling...");
-};
-
-console.log(debounce(getData, 500));
+const debounce = getDebouncedData(fetchApi, 300);
