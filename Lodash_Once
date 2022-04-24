@@ -1,0 +1,16 @@
+function once(func) {
+  let called;
+  return function () {
+    if (func) {
+      called = func.apply(this, arguments);
+      func = null;
+    }
+    return called;
+  };
+}
+
+const output = once((a, b) => console.log("calculating sum...", a + b));
+output(10, 20);
+output(10, 20);
+output(10, 20);
+output(10, 20);
