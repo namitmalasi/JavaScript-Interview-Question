@@ -11,7 +11,8 @@ const firstNonRepeatingCharacter = (str) => {
 
   for (let item in obj) {
     if (obj[item] === 1) {
-      return str.indexOf(item);
+      // return str.indexOf(item);
+      return item;
     }
   }
   return -1;

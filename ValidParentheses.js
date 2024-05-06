@@ -1,5 +1,6 @@
 /*
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', 
+determine if the input string is valid.
 
 An input string is valid if:
 
@@ -22,12 +23,12 @@ const isValidParentheses = function (s) {
     } else {
       if (map[stack.pop()] !== s[i]) return false;
     }
-  }
+  } 
   return stack.length ? false : true;
 };
 
 console.log(isValidParentheses("()"));
-console.log(isValidParentheses("(){}[]"));
+console.log(isValidParentheses("({[}])"));
 console.log(isValidParentheses("(]"));
 console.log(isValidParentheses("([)]"));
 console.log(isValidParentheses("{[]}"));

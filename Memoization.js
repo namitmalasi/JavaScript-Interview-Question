@@ -16,7 +16,7 @@ function memoize(fn) {
 }
 
 const addThreeNums = (a, b, c) => a + b + c;
-
+  
 const add = memoize(addThreeNums);
 console.time();
 console.log(add(1, 2, 3));

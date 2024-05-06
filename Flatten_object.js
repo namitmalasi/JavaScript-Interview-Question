@@ -17,7 +17,7 @@ Output:
 {
   Address: "san francisco",
   Company: "google",
-  contact: -999999908,
+  contact: -999999908,    
   office.office1: "gurugram",
   office.office2: "bengaluru",
   office.office3: ["hyderabad,mumbai"]
@@ -53,3 +53,6 @@ const flattenObj = (ob) => {
 };
 
 console.log(flattenObj(obj));
+
+
+

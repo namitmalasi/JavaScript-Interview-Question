@@ -17,7 +17,7 @@ console.log(PairWithGivenSum(arr, 6));
 // Approach 2
 
 function PairWithGivenSum(arr, sum) {
-  const set = new Set();
+  const set = new Set();  
   for (let i = 0; i < arr.length; i++) {
     if (set.has(sum - arr[i])) {
       return true;

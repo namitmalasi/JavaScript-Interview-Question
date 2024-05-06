@@ -1,5 +1,5 @@
-// Given a String, create a function on String that converts the first character of each word to
-// Uppercase and rest characters are lowercase.
+// Given a String, create a function on String that converts the first character 
+// of each word to Uppercase and rest characters are lowercase.
 
 /* 
 Input:

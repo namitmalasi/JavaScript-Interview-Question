@@ -97,14 +97,14 @@ class LinkedList {
       let counter = 0;
       while (counter < pos) {
         prev = current;
-        current = current.next;
+        current = current.next;   
         counter++;
       }
       node.next = current;
       prev.next = node;
       this.size++;
-    }
-  }
+    }     
+  }  
 
   // Removing a node from certain position.
   removeAt(pos) {

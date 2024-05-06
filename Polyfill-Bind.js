@@ -27,5 +27,5 @@ Function.prototype.myBind = function (...args) {
   };
 };
 
-let print = printname.myBind(name1, "Mumbai", "Maharashtra");
-print("india");
+let print = printname.myBind(name1, "Mumbai", "Maharashtra", "india");
+print();
